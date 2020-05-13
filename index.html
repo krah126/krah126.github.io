@@ -15,7 +15,7 @@
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
-	var siteName;
+	Window.siteName = '';
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
@@ -34,7 +34,7 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-		siteName = 'Product Interest Site';
+		siteName = 'test';
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 		embedded_svc.settings.extraPrechatFormDetails = [{
@@ -43,7 +43,6 @@
 			"transcriptFields":[ "Product_Interest__c" ],
 			"displayToAgent":true
 		    }];
-
 		embedded_svc.init(
 			'https://fleetcorna--artemdev.my.salesforce.com',
 			'https://artemdev-fleetcor.cs45.force.com/LiveChatSite',
@@ -52,8 +51,8 @@
 			'Chat_team',
 			{
 				baseLiveAgentContentURL: 'https://c.la2-c1cs-ph2.salesforceliveagent.com/content',
-				deploymentId: '5728A000000Cb32',
-				buttonId: '5738A000000CbG3',
+				deploymentId: '5728A000000CaxD',
+				buttonId: '5738A000000CbBb',
 				baseLiveAgentURL: 'https://d.la2-c1cs-ph2.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Chat_team',
 				isOfflineSupportEnabled: false
@@ -72,6 +71,8 @@
 		initESW('https://service.force.com');
 	}
 </script>
+		
+
 </body>
 
 </html>
