@@ -13,6 +13,16 @@
 	}
 </style>
 
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -39,15 +49,15 @@
 
 		embedded_svc.init(
 			'https://fleetcorna--uat.my.salesforce.com',
-			'https://uat-fleetcornaf.cs60.force.com/LiveChatSite',
+			'https://uat-fleetcornaf.cs62.force.com/LiveChatSite',
 			gslbBaseURL,
-			'00D3C00000050na',
+			'00D5C0000008uDE',
 			'Online_Chat',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-ia4.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-ia5.salesforceliveagent.com/content',
 				deploymentId: '5723l000000leD6',
 				buttonId: '5733l000000lYgt',
-				baseLiveAgentURL: 'https://d.la1-c1cs-ia4.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la2-c1cs-ia5.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3l000000PBHwEAO_1750d706b33',
 				isOfflineSupportEnabled: false
 			}
